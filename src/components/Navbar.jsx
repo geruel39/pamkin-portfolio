@@ -8,7 +8,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
         document.body.style.overflow = menuOpen ? "hidden" : "";
     }, [menuOpen])
 
-    return <nav className="fixed top-0 w-full bg-[rgba[10,10,10,0.8]] backdrop-blur-lg border-white/10 shadow-lg z-50 opacity-5 transition duration-300 hover:opacity-100"> 
+    return <nav className="fixed top-0 w-full bg-[rgba[10,10,10,0.8]] backdrop-blur-lg border-white/10 shadow-lg z-50 opacity-100"> 
             
             <div className="max-w-5x1 mx-auto px-4">
 

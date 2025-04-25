@@ -116,7 +116,7 @@ export const Project = () => {
 
                 <div className="relative w-full flex items-center justify-center">
 
-                    <img src={`/projects/${projects[project].img[image]}`} className="w-auto h-96 object-cover" />
+                    <img src={`pamkin-portfolio/projects/${projects[project].img[image]}`} className="w-auto h-96 object-cover" />
 
                     <button onClick={()=>{prevImage();}} className="absolute top-1/2 left-10  bg-[rgba(10,10,10,.5)] text-4xl pt-1 pb-2 px-1 rounded-full cursor-pointer hover:text-yellow-500">&#8592; </button>
                     <button onClick={()=>{nextImage();}} className="absolute top-1/2 right-10 bg-[rgba(10,10,10,.5)] text-4xl pt-1 pb-2 px-1 rounded-full cursor-pointer hover:text-yellow-500">&#8594;</button>

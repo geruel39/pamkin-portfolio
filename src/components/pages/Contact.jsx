@@ -68,7 +68,7 @@ export const Contact = () => {
 
                     {members[info].socials.map((svg, index) => (
                         <div className="flex items-center mx-auto my-10">
-                            <img src={`/socials/${svg}.svg`} className="w-12 lg:w-16 h-auto  mx-5" />
+                            <img src={`pamkin-portfolio/socials/${svg}.svg`} className="w-12 lg:w-16 h-auto  mx-5" />
                             <p className="text-xs lg:text-base">{members[info].link[index]}</p>
                         </div>
                     ))}

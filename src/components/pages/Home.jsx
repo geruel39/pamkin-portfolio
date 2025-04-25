@@ -15,7 +15,7 @@ export const Home = () => {
 
                     <h1 className="text-5xl text-yellow-500">PAMKIN</h1>
                     <p className="tracking-widest">We are Pamkin, a group of passionate IT students driven by a desire to explore and master cutting-edge technologies, particularly in the field of web applications. Our goal is to continuously learn, grow, and strive toward becoming skilled professionals in the tech industry.</p>
-                    <div className="flex space-x-2">
+                    <div className="flex space-x-2 space-y-2 flex-wrap">
 
                         <Button text={"Mission & Vision"} click={() => setMandV(true)}/>
                         <Link to="/about"><Button text={"About Us"} /></Link>
