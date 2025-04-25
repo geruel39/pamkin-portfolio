@@ -2,14 +2,14 @@ import './App.css'
 import "./index.css"
 import React, { useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { LoadScreen } from './components/LoadScreen'
+import { LoadScreen } from './components/LoadScreen';
 import { Navbar } from './components/Navbar';
 import { MobileMenu } from './components/MobileMenu';
-import { Home } from './components/pages/Home'
+import { Home } from './components/pages/Home';
 import { About } from './components/pages/About';
 import { Team } from './components/pages/Team';
-import {Project} from './components/pages/Project'
-import {Contact} from './components/pages/Contact'
+import {Project} from './components/pages/Project';
+import {Contact} from './components/pages/Contact';
 
 function App() {
 

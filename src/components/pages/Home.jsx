@@ -27,7 +27,7 @@ export const Home = () => {
                 
                 </div>
 
-                <img src="/pumpkin.svg" alt="Pamkin Guild Logo" className="w-96 m-5 lg:block hidden"/>
+                <img src="pamkin-portfolio/pumpkin.svg" alt="Pamkin Guild Logo" className="w-96 m-5 lg:block hidden"/>
 
             </div>
 

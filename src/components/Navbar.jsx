@@ -15,7 +15,7 @@ export const Navbar = ({menuOpen, setMenuOpen}) => {
                 <div className="flex md:justify-around justify-between items-center h-16">
 
                     <Link to={"/"} className="flex items-center">
-                        <img src="/public/pumpkin.svg" alt="Pamkin Guild" width="50px" height="50px"/>
+                        <img src="pamkin-portfolio/pumpkin.svg" alt="Pamkin Guild" width="50px" height="50px"/>
                         <h1 className="text-yellow-500 ml-1 uppercase"> Pamkin</h1>
                     </Link>
                     

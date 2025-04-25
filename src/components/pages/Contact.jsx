@@ -52,7 +52,7 @@ export const Contact = () => {
                             <div key={index} onClick={()=>{setInfo(index); setPopup(true);}}
                                 className={`card-member relative z-1 cursor-pointer border-opacity-0 shadow-lg shadow-black m-5`}>
 
-                                <img src={`/profile/${member.img}`} alt={member.name} className={`w-[170px] h-[175px] object-cover bg-[url(/endless-constellation.svg)] border-b border-black`}/>
+                                <img src={`pamkin-portfolio/profile/${member.img}`} alt={member.name} className={`w-[170px] h-[175px] object-cover bg-[url(/endless-constellation.svg)] border-b border-black`}/>
                                 <p className='bg-[#121212] w-full text-center text-xs py-1 text-yellow-500'>{member.name}</p>
 
                             </div>

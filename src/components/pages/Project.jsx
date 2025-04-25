@@ -75,7 +75,7 @@ export const Project = () => {
                     <div key={index} className={`w-full bg-[rgba(10,10,10,.5)] p-5 my-10 flex md:flex-row flex-col justify-between block-element`}>
 
                         <div className={`max-w-xl overflow-hidden flex justify-center items-center mx-5 order-1 ${(index % 2 === 0) ? "md:order-1" : "md:order-2"} relative`}>
-                            <img src={`/projects/${project.img[0]}`} className="w-auto h-96 object-cover rounded m-auto p-1 border border-yellow-500"/>
+                            <img src={`pamkin-portfolio/projects/${project.img[0]}`} className="w-auto h-96 object-cover rounded m-auto p-1 border border-yellow-500"/>
                             <button onClick={() => {setView(true); setProject(index); setImage(0);}} className="absolute bottom-3 right-3 cursor-pointer bg-[#121212] p-1 rounded border border-yellow-500 transition duration-200 hover:text-yellow-500 hover:border-[#121212] ">Images</button>
                         </div>
     
@@ -90,7 +90,7 @@ export const Project = () => {
                                 {project.tech.map((t, index) => (
 
                                     <div key={index} className="flex flex-col items-center p-5">
-                                        <img src={`/skills/${t}.svg`} className="w-[50px] h-auto"/>
+                                        <img src={`pamkin-portfolio/skills/${t}.svg`} className="w-[50px] h-auto"/>
                                         <p className="uppercase text-xs">{t}</p>
                                     </div>
 

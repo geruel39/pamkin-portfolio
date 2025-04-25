@@ -66,7 +66,7 @@ export const Team = () => {
                             <div key={index} onClick={() => {setMember(index); setInfo(false)}}
                                 className={`card-member relative z-1 cursor-pointer border-opacity-0 border-double border-3 border-yellow-500 m-5`}>
 
-                                <img src={`/profile/${member.img}`} alt={member.name} className={`w-[180px] h-[175px] object-cover bg-[url(/endless-constellation.svg)] border-b border-yellow-500 border-opacity-0 shadow-inner shadow-yellow-900`}/>
+                                <img src={`pamkin-portfolio/profile/${member.img}`} alt={member.name} className={`w-[180px] h-[175px] object-cover bg-[url(/endless-constellation.svg)] border-b border-yellow-500 border-opacity-0 shadow-inner shadow-yellow-900`}/>
                                 <p className='bg-[rgba(10,10,10,.8)] w-full text-center text-sm text-yellow-500'>{member.name}</p>
                                 <p className='bg-[rgba(10,10,10,.8)] w-full text-xs uppercase text-center text-yellow-600'>{member.role}</p>
 
@@ -90,7 +90,7 @@ export const Team = () => {
                             <p className='text-yellow-500 text-2xl bg-[rgba(10,10,10,.2)] px-5'>PAMKIN MEMBER</p>
 
                             <div className='rounded translate-y-1/2 info-img'>
-                                <img src={`/profile/${members[member].img}`} alt={members[member].name} className='w-[200px] h-[200px] object-cover bg-[url(/endless-constellation.svg)]' />
+                                <img src={`pamkin-portfolio/profile/${members[member].img}`} alt={members[member].name} className='w-[200px] h-[200px] object-cover bg-[url(/endless-constellation.svg)]' />
                             </div>
 
                         </div>
@@ -114,7 +114,7 @@ export const Team = () => {
                             {members[member].skills.map((skill, index) => (
 
                                 <div key={index} className='flex flex-col items-center m-5'>
-                                    <img src={`/skills/${skill}.svg`} alt={skill} className='w-[100px] h-[auto]'/>
+                                    <img src={`pamkin-portfolio/skills/${skill}.svg`} alt={skill} className='w-[100px] h-[auto]'/>
                                     <p className='uppercase text-sm py-2'>{skill}</p>
                                 </div>
                             ))}
@@ -132,7 +132,7 @@ export const Team = () => {
                         {members[member].socials.map((social, index) => (
 
                             <a key={index} className='flex flex-col items-center m-5 cursor-pointer transition duration-300 hover:scale-110' href={members[member].link[index]} target="_blank" rel="noopener noreferrer">
-                                <img src={`/socials/${social}.svg`} alt={social} className='w-[75px] h-[auto]'/>
+                                <img src={`pamkin-portfolio/socials/${social}.svg`} alt={social} className='w-[75px] h-[auto]'/>
                                 <p className='uppercase text-sm py-2'>{social}</p>
                             </a>
 
