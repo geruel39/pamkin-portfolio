@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+@import "tailwindcss";
+
+*{
+  scroll-behavior: smooth;
+  scrollbar-color: #FE9800 #121212;
+  scrollbar-width: thin;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', sans-serif;
+  color: #f3f4f6;
+  background-color: #121212; 
+}
+
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.loading-shine {
+  animation: shine 1s;
+}
+
+@keyframes shine {
+  0% {
+    backdrop-filter: blur(1rem);
+  }
+  100% {
+    backdrop-filter: blur(0rem);
+  }
+}
+
+@property --gradient-angle{
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.card-member::after{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  translate: -50% -50%;
+  background: conic-gradient(from var(--gradient-angle), transparent, #F59E0B);
+  animation: rotateBorder 2s linear infinite;
+}
+
+.card-member::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  translate: -50% -50%;
+  background-color: #121212;
+  transition: all .3s;
+}
+
+.card-member:hover::before{
+  filter: blur(3.5rem);
+  background-color: #F59E0B;
+  opacity: 0.3;
+}
+
+.info-img{
+  position: relative;
+  z-index: 5;
+}
+
+.info-img::after{
+  content: '';
+  position: absolute;
+  height: 101%;
+  width: 101%;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  translate: -50% -50%;
+  background: conic-gradient(from var(--gradient-angle),#F59E0B 25%, transparent 75%);
+  animation: rotateBorder 3s linear infinite;
+}
+
+@keyframes rotateBorder{
+  0%{--gradient-angle: 0deg;}
+  100%{--gradient-angle: 360deg;}
+}
+
+.fading{
+  animation: fade .3s;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes appear-e{
+  from{
+    opacity: 0;
+    transform: translateX(300px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes appear-o{
+  from{
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.block-element:nth-child(even){
+  animation: appear-e linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
+
+.block-element:nth-child(odd){
+  animation: appear-o linear;
+  animation-timeline: view();
+  animation-range: entry 0;
+}
